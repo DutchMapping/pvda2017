@@ -8,87 +8,85 @@ set-jump: post_election
 
 @1928
 on-arrival: {!
-Q.workers = 46; // industry and trade
-Q.old_middle = 13; // "old mittelstand"
+Q.workers = 24.9; // werkende middengroep
+Q.old_middle = 12.2; // rentenierende bovenlaag
 // 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.new_middle = 14; // "new mittelstand"
-Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
-// source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 8.6;
-Q.catholics = 30;
+Q.new_middle = 28.5; // werkende bovenlaag + jonge 
+Q.rural = 10; // onzekere werkenden
+Q.unemployed = 6.3; // kansarmen
+Q.catholics = 18.1; //laagopgeleide gepensioneerden
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['pvda', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['pvda', 'sp', 'cda', 'd66', 'vvd', 'pvv', 'fvd', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_pvda = 65;
-Q.workers_kpd = 20;
-Q.workers_z = 5;
-Q.workers_ddp = 0;
-Q.workers_dvp = 0;
-Q.workers_dnvp = 5;
-Q.workers_nsdap = 0;
-Q.workers_other = 10;
+Q.workers_pvda = 4;
+Q.workers_sp = 4;
+Q.workers_cda = 7;
+Q.workers_d66 = 8;
+Q.workers_vvd = 7;
+Q.workers_pvv = 12;
+Q.workers_fvd = 1;
+Q.workers_other = 18;
 
 Q.old_middle_pvda = 5;
-Q.old_middle_kpd = 0;
-Q.old_middle_z = 5;
-Q.old_middle_ddp= 10;
-Q.old_middle_dvp = 25;
-Q.old_middle_dnvp = 25;
-Q.old_middle_nsdap = 10;
-Q.old_middle_other = 10;
+Q.old_middle_sp = 2;
+Q.old_middle_cda = 12;
+Q.old_middle_d66= 11;
+Q.old_middle_vvd = 11;
+Q.old_middle_pvv = 5;
+Q.old_middle_fvd = 1;
+Q.old_middle_other = 46;
 
-Q.new_middle_pvda = 5;
-Q.new_middle_kpd = 0;
-Q.new_middle_z = 10;
-Q.new_middle_ddp= 25;
-Q.new_middle_dvp = 25;
-Q.new_middle_dnvp = 10;
-Q.new_middle_nsdap = 5;
-Q.new_middle_other = 15;
+Q.new_middle_pvda = 4; 
+Q.new_middle_sp = 3; //sp
+Q.new_middle_cda = 5; //cda
+Q.new_middle_d66= 19; //d66
+Q.new_middle_vvd = 10; //vvd
+Q.new_middle_pvv = 2; //pvv
+Q.new_middle_fvd = 0; //fvd
+Q.new_middle_other = 17;
 
-Q.rural_pvda = 10;
-Q.rural_kpd = 0;
-Q.rural_z = 5;
-Q.rural_ddp= 5;
-Q.rural_dvp = 15;
-Q.rural_dnvp = 45;
-Q.rural_nsdap = 5;
-Q.rural_other = 10;
+Q.rural_pvda = 4;
+Q.rural_sp = 8;
+Q.rural_cda = 4;
+Q.rural_d66= 3;
+Q.rural_vvd = 2;
+Q.rural_pvv = 21;
+Q.rural_fvd = 1;
+Q.rural_other = 28;
 
-Q.unemployed_pvda = 25;
-Q.unemployed_kpd = 55;
-Q.unemployed_z = 1;
-Q.unemployed_ddp = 0;
-Q.unemployed_dvp = 0;
-Q.unemployed_dnvp = 5;
-Q.unemployed_nsdap = 15;
-Q.unemployed_other = 9;
+Q.unemployed_pvda = 7;
+Q.unemployed_sp = 2;
+Q.unemployed_cda = 7;
+Q.unemployed_d66 = 0;
+Q.unemployed_vvd = 0;
+Q.unemployed_pvv = 16;
+Q.unemployed_fvd = 0;
+Q.unemployed_other = 38;
 
-Q.catholics_pvda = 15;
-Q.catholics_kpd = 5;
-Q.catholics_z = 50;
-Q.catholics_ddp = 0;
-Q.catholics_dvp = 5;
-Q.catholics_dnvp = 5;
-Q.catholics_nsdap = 0;
-Q.catholics_other = 10;
+Q.catholics_pvda = 6;
+Q.catholics_sp = 4;
+Q.catholics_cda = 16;
+Q.catholics_d66 = 3;
+Q.catholics_vvd = 4;
+Q.catholics_pvv = 12;
+Q.catholics_fvd = 1;
+Q.catholics_other = 65;
 !}
 go-to: election_algorithm
 set-jump: post_election
 
 @1930
 on-arrival: {!
-Q.workers = 46; // industry and trade
-Q.old_middle = 13; // "old mittelstand"
+Q.workers = 24.9; // werkende middengroep
+Q.old_middle = 12.2; // rentenierende bovenlaag
 // 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.new_middle = 14; // "new mittelstand"
-Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
-// source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 20;
-Q.catholics = 30;
+Q.new_middle = 28.5; // werkende bovenlaag + jonge 
+Q.rural = 10; // onzekere werkenden
+Q.unemployed = 6.3; // kansarmen
+Q.catholics = 18.1; //laagopgeleide gepensioneerden
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
 Q.parties = ['pvda', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
