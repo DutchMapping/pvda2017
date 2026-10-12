@@ -119,9 +119,9 @@ Q.cda_relation = 50;
 Q.sp_relation = 25;
 Q.d66_relation = 60;
 Q.vvd_relation = 35;
-// DNVP and NSDAP are invariably hostile
-Q.DNVP_relation = 10;
-Q.NSDAP_relation = 0;
+// PVV and FvD are invariably hostile
+Q.PVV_relation = 10;
+Q.FvD_relation = 0;
 
 Q.sp_leader = "Thälmann";
 // alternative is the Conciliators as party leader
@@ -392,9 +392,9 @@ Q.minority_government = 0;
 Q.foreign_minister = 'Streseman';
 Q.foreign_minister_party = 'DVP';
 Q.interior_minister = 'von Keudell';
-Q.interior_minister_party = 'DNVP';
+Q.interior_minister_party = 'PVV';
 Q.justice_minister = 'Hergt';
-Q.justice_minister_party = 'DNVP';
+Q.justice_minister_party = 'PVV';
 Q.labor_minister = 'Brauns';
 Q.labor_minister_party = 'Z';
 Q.reichswehr_minister = 'Groener';
@@ -404,7 +404,7 @@ Q.economic_minister_party = 'DVP';
 Q.finance_minister = 'Köhler';
 Q.finance_minister_party = 'Z';
 Q.agriculture_minister = 'Schiele';
-Q.agriculture_minister_party = 'DNVP';
+Q.agriculture_minister_party = 'PVV';
 
 // Events: what has occurred?
 Q.pancdaerkreucdaer_seen = 0;
