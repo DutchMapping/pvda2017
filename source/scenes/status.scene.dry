@@ -42,17 +42,17 @@ Reichstag composition:
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 [? if srpd_formed and srpd_r > 0: SRPD: [+ srpd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
-{!<span class="tooltip-text" title="Center Party + Bavarian People's Party">CDA + BVP</span>!}: [+ cda_r +]%
+{!<span class="tooltip-text" title="Christian-Democratic Appeal">CDA</span>!}: [+ cda_r +]%
 # 1928: 10, 1930: 13
-{!<span class="tooltip-text" title="Communist Party of Germany">SP</span>!}: [+ sp_r +]%
+{!<span class="tooltip-text" title="Socialist Party">SP</span>!}: [+ sp_r +]%
 # 1928: 5, 1930: 4 (as DstP)
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]{!</span>!}: [+ d66_r +]%
+{!<span class="tooltip-text" title="Democraten 66">!}[? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]{!</span>!}: [+ d66_r +]%
 # 1928: 9, 1930: 5
-{!<span class="tooltip-text" title="German People's Party">VVD</span>!}: [+ vvd_r +]%
+{!<span class="tooltip-text" title="People's party for Freedom and Democracy">VVD</span>!}: [+ vvd_r +]%
 # 1928: 14, 1930: 7
-{!<span class="tooltip-text" title="German National People's Party">PVV</span>!}: [+ pvv_r +]%
+{!<span class="tooltip-text" title="Party For Freedom">PVV</span>!}: [+ pvv_r +]%
 # 1928: 3, 1930: 18
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">FvD</span>!}: [+ fvd_r +]%
+{!<span class="tooltip-text" title="Forum for Democracy">FvD</span>!}: [+ fvd_r +]%
 # 1928: 9, 1930: 10
 Others: [+ other_r +]%
 
@@ -63,8 +63,6 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 = Economics
 
 Inflation: [+ inflation_2 +]%
-
-[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
 
 Economic growth: [+ economic_growth_2 +]%
 
@@ -77,17 +75,17 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Center Party">CDA</span>!}: [+ cda_relation : relationships +]
+{!<span class="tooltip-text" title="Christian Democratic Appeal">CDA</span>!}: [+ cda_relation : relationships +]
 
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]{!</span>!}: [+ d66_relation : relationships +]
+{!<span class="tooltip-text" title="Democraten 66">!}[? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]{!</span>!}: [+ d66_relation : relationships +]
 
-{!<span class="tooltip-text" title="German People's Party">VVD</span>!}: [+ vvd_relation : relationships +]
+{!<span class="tooltip-text" title="People's party for Freedom and Democracy">VVD</span>!}: [+ vvd_relation : relationships +]
 
-{!<span class="tooltip-text" title="Communist Party of Germany">SP</span>!}: [+ sp_relation : relationships +]
+{!<span class="tooltip-text" title="Socialist Party">SP</span>!}: [+ sp_relation : relationships +]
 
-{!<span class="tooltip-text" title="German National People's Party">PVV</span>!}: [+ pvv_relation : relationships +]
+{!<span class="tooltip-text" title="Party For Freedom">PVV</span>!}: [+ pvv_relation : relationships +]
 
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">FvD</span>!}: [+ fvd_relation : relationships +]
+{!<span class="tooltip-text" title="Forum for Democracy">FvD</span>!}: [+ fvd_relation : relationships +]
 
 = Internal Factions of the PvdA
 
@@ -165,11 +163,11 @@ PvdA: [+ pvda_votes +]%
 
 [? if srpd_formed: SRPD: [+ srpd_votes +]% ?]
 
-CDA + BVP: [+ cda_votes +]%
+CDA: [+ cda_votes +]%
 
 SP: [+ sp_votes +]%
 
-[? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ d66_votes +]%
+D66: [+ d66_votes +]%
 
 VVD: [+ vvd_votes +]%
 
@@ -181,16 +179,16 @@ Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Workers: PvdA: [+ workers_pvda_display +]%, CDA: [+ workers_cda_display +]%, SP: [+ workers_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ workers_d66_display +]%, VVD: [+ workers_vvd_display +]%; PVV: [+ workers_pvv_display +]%, FvD: [+ workers_fvd_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?][? if srpd_formed: SRPD: [+ workers_srpd_display +]% ?]
+Working Middle Group: PvdA: [+ workers_pvda_display +]%, CDA: [+ workers_cda_display +]%, SP: [+ workers_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ workers_d66_display +]%, VVD: [+ workers_vvd_display +]%; PVV: [+ workers_pvv_display +]%, FvD: [+ workers_fvd_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?][? if srpd_formed: SRPD: [+ workers_srpd_display +]% ?]
 
-New Middle Class: PvdA: [+ new_middle_pvda_display +]%, CDA: [+ new_middle_cda_display +]%, SP: [+ new_middle_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ new_middle_d66_display +]%, VVD: [+ new_middle_vvd_display +]%; PVV: [+ new_middle_pvv_display +]%, FvD: [+ new_middle_fvd_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ new_middle_srpd_display +]% ?]
+Young and/or Working Top: PvdA: [+ new_middle_pvda_display +]%, CDA: [+ new_middle_cda_display +]%, SP: [+ new_middle_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ new_middle_d66_display +]%, VVD: [+ new_middle_vvd_display +]%; PVV: [+ new_middle_pvv_display +]%, FvD: [+ new_middle_fvd_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ new_middle_srpd_display +]% ?]
 
-Old Middle Class: PvdA: [+ old_middle_pvda_display +]%, CDA: [+ old_middle_cda_display +]%, SP: [+ old_middle_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ old_middle_d66_display +]%, VVD: [+ old_middle_vvd_display +]%; PVV: [+ old_middle_pvv_display +]%, FvD: [+ old_middle_fvd_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ old_middle_srpd_display +]% ?]
+Retired Top: PvdA: [+ old_middle_pvda_display +]%, CDA: [+ old_middle_cda_display +]%, SP: [+ old_middle_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ old_middle_d66_display +]%, VVD: [+ old_middle_vvd_display +]%; PVV: [+ old_middle_pvv_display +]%, FvD: [+ old_middle_fvd_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ old_middle_srpd_display +]% ?]
 
-Rural: PvdA: [+ rural_pvda_display +]%, CDA: [+ rural_cda_display +]%, SP: [+ rural_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ rural_d66_display +]%, VVD: [+ rural_vvd_display +]%; PVV: [+ rural_pvv_display +]%, FvD: [+ rural_fvd_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ rural_srpd_display +]% ?]
+Uncertain Workers: PvdA: [+ rural_pvda_display +]%, CDA: [+ rural_cda_display +]%, SP: [+ rural_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ rural_d66_display +]%, VVD: [+ rural_vvd_display +]%; PVV: [+ rural_pvv_display +]%, FvD: [+ rural_fvd_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ rural_srpd_display +]% ?]
 
-Unemployed: PvdA: [+ unemployed_pvda_display +]%, CDA: [+ unemployed_cda_display +]%, SP: [+ unemployed_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ unemployed_d66_display +]%, VVD: [+ unemployed_vvd_display +]%; PVV: [+ unemployed_pvv_display +]%, FvD: [+ unemployed_fvd_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ unemployed_srpd_display +]% ?]
+The Disadvantaged: PvdA: [+ unemployed_pvda_display +]%, CDA: [+ unemployed_cda_display +]%, SP: [+ unemployed_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ unemployed_d66_display +]%, VVD: [+ unemployed_vvd_display +]%; PVV: [+ unemployed_pvv_display +]%, FvD: [+ unemployed_fvd_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ unemployed_srpd_display +]% ?]
 
-Catholics: PvdA: [+ catholics_pvda_display +]%, CDA: [+ catholics_cda_display +]%, SP: [+ catholics_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ catholics_d66_display +]%, VVD: [+ catholics_vvd_display +]%; PVV: [+ catholics_pvv_display +]%, FvD: [+ catholics_fvd_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ catholics_srpd_display +]% ?]
+Poorer Retirees: PvdA: [+ catholics_pvda_display +]%, CDA: [+ catholics_cda_display +]%, SP: [+ catholics_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ catholics_d66_display +]%, VVD: [+ catholics_vvd_display +]%; PVV: [+ catholics_pvv_display +]%, FvD: [+ catholics_fvd_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ catholics_srpd_display +]% ?]
 
 Support for the Republic: [+ pro_republic_disp +]%
