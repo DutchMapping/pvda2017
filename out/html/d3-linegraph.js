@@ -16,13 +16,13 @@ function addMonths(date, months) {
 d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
     /* params */
     if (!parties) {
-        parties = ['spd', 'sp', 'd66', 'cda', 'vvd', 'pvv', 'fvd', 'other'];
+        parties = ['pvda', 'sp', 'd66', 'cda', 'vvd', 'pvv', 'fvd', 'other'];
     }
     if (!partyColors) {
-        partyColors = {'spd': '#E3000F', 'sp': '#8B0000', 'd66': '#DCCA4A', 'cda': '#000', 'vvd': '#D5AC27', 'pvv': '#3f7bc1', 'fvd': '#954B00', 'other': '#a0a0a0'};
+        partyColors = {'pvda': '#E3000F', 'sp': '#8B0000', 'd66': '#DCCA4A', 'cda': '#000', 'vvd': '#D5AC27', 'pvv': '#3f7bc1', 'fvd': '#954B00', 'other': '#a0a0a0'};
     }
     if (!partyNames) {
-        partyNames = {'spd': 'SPD', 'sp': 'SP', 'd66': 'D66', 'cda': 'CDA', 'vvd': 'DVP', 'pvv': 'PVV', 'fvd': 'FvD', 'other': 'Others'};
+        partyNames = {'pvda': 'PvdA', 'sp': 'SP', 'd66': 'D66', 'cda': 'CDA', 'vvd': 'DVP', 'pvv': 'PVV', 'fvd': 'FvD', 'other': 'Others'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;
@@ -59,9 +59,9 @@ d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataM
 
       // Declare the y (vertical position) scale.
       if (!dataMax) {
-          const maxSPD = d3.max(data, d => d.spd);
+          const maxPvdA = d3.max(data, d => d.pvda);
           const maxFvD = d3.max(data, d => d.fvd);
-          dataMax = maxSPD >= maxFvD ? maxSPD + 10 : maxFvD + 10;
+          dataMax = maxPvdA >= maxFvD ? maxPvdA + 10 : maxFvD + 10;
           dataMin = 0;
       }
       const yScale = d3.scaleLinear([dataMin, dataMax], [height - marginBottom, marginTop]);
