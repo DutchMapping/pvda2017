@@ -95,7 +95,7 @@ if (Q.fvd_r >= Q.pvda_r && Q.fvd_r >= Q.sp_r) {
 }
 
 if (Q.sp_r >= Q.pvda_r && Q.sp_r >= Q.fvd_r) {
-    Q.largest_party = 'KPD';
+    Q.largest_party = 'SP';
 }
 
 // coalitions
@@ -301,7 +301,7 @@ go-to: coalition_menu
 
 [? if srpd_formed : {!<tr><td><div class="box" style='background-color:#F4A460'> </div> !}SRPD: {!</td><td>!} [+ srpd_r +]% {!</td><td>!} [+ str_change_srpd +] {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#8B0000'> </div> !}KPD: {!</td><td>!} [+ sp_r +]% {!</td><td>!} [+ str_change_sp +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#8B0000'> </div> !}SP: {!</td><td>!} [+ sp_r +]% {!</td><td>!} [+ str_change_sp +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#DCCA4A'> </div> !} [+ d66_name +]: {!</td><td>!} [+ d66_r +]% {!</td><td>!} [+ str_change_d66 +] {!</td></tr>!}
 
@@ -320,13 +320,13 @@ go-to: coalition_menu
 
 **Potential coalitions:**
 
-Weimar Coalition (PvdA + Z + [+ d66_name +]): [+ weimar_coalition +]%
+Social Christian Coalition (PvdA + CDA + [+ d66_name +]): [+ weimar_coalition +]%
 
-Grand Coalition (PvdA + Z + BVP + [+ d66_name +] + VVD): [+ grand_coalition +]%
+Grand Coalition (PvdA + CDA + BVP + [+ d66_name +] + VVD): [+ grand_coalition +]%
 
-Bourgeois Coalition (Z + BVP + [+ d66_name +] + VVD + Others): [+ bourgeois_coalition +]%
+Bourgeois Coalition (CDA + BVP + [+ d66_name +] + VVD + Others): [+ bourgeois_coalition +]%
 
-Right-wing Coalition (Z + BVP + VVD + Others + PVV): [+ right_coalition +]%
+Right-wing Coalition (CDA + BVP + VVD + Others + PVV): [+ right_coalition +]%
 
 [? if nazi_urgency <= 1 and fvd_r >= 15 : The rapid rise in FvD votes is extremely worrying. Many had believed that the party was moribund; now, some of us consider it to be the greatest threat to democracy in Germany. ?]
 
@@ -421,12 +421,6 @@ The KPD has taken an abstentionist position with regards to ministries. They cla
 - @ministries: First, we must select our ministries.
 
 
-@popular_front_civil_war
-on-arrival: sp_relation = 80; reichswehr_loyalty += 0.25;
-
-In response to the KPD's entrance into the government, the right-wing immediately launches a coup attempt. Troops of the Stahlhelm and Nazi SA enter Berlin and immediately begin clashing with our supporters! Reactionary officers within the Reichswehr have taken their troops out of the barracks and joined them with the Stahlhelm to stop us from taking power.
-
-The Center manages to diffuse some of the hostility from the Reichswehr and the Stahlhelm, but fail to prevent the outbreak of fighting. We are forced to fight on the same side as the KPD, whether we want to or not.
 
 - @civil_war: A civil war, then.
 
@@ -608,33 +602,6 @@ There is no path to an obviously workable majority. Since President Hindenburg i
 - @new_elections: We will have new elections.
 
 # - if FvD is the largest party and the 
-
-@no_majority_bruning
-go-to: no_majority_bruning_toleration if (no_majority_elections <= 3 and anti_democratic_coalition <= 50); hindenburg_appoints_papen if no_majority_elections > 3 or anti_democratic_coalition > 50
-
-
-@hindenburg_appoints_papen
-on-arrival: chancellor = "Papen"; chancellor_party = "I"; next_election_time = time+3; next_election_month = month + 3; next_election_year = year; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; sa_banned = 0; pro_republic -= 8; finance_minister_party = "I"; interior_minister_party = "I"; economic_minister_party = "I"; labor_minister_party = "I"; foreign_minister_party = "I"; agriculture_minister_party = "I"; reichswehr_minister = "I";
-
-There is no path to a majority government. President Hindenburg is tired of the chaos, and appoints Franz von Papen as chancellor instead of Brüning. Papen is a indenpendent formerly from the Center Party, and is significantly to the right of the majority of the Center Party.
-
-Papen is immediately faced with a vote of no confidence, given his unpopularity. However the PvdA votes, he is guaranteed to fall, due to the unanimous hatred against him from all other parties.
-
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
-
-@no_majority_bruning_toleration
-on-arrival: no_majority_bruning_elections += 1
-
-There is no path to a majority government. One option would be to have a continuation of the current Brüning government; if we tolerate it, then it would retain a majority vote against no-confidence.
-
-Alternatively, we could try to form a "new grand coalition" of all constitutional parties except the FvD, KPD, and PVV. The stumbling block are the minor conservative parties such as the "Economic Party of the Middle Class", who detest any hint of socialism and would ruin the country before working with Marxists.
-
-The third option is to have new elections.
-
-- @toleration_bruning: We will tolerate Brüning.
-- @new_grand_coalition: We will try to form a new grand coalition.
-- @new_elections: We will have new elections.
-- @unity_government
 
 
 @new_grand_coalition
