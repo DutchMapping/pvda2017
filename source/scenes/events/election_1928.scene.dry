@@ -168,14 +168,14 @@ go-to: coalition_menu
 
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#C40000'> </div> !}SP: {!</td><td>!} [+ sp_r +]% {!</td><td>!} [+ str_change_sp +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#E2001A'> </div> !}PvdA: {!</td><td>!} [+ pvda_r +]% {!</td><td>!} [+ str_change_pvda +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#04A64B'> </div> !} [+ d66_name +]: {!</td><td>!} [+ d66_r +]% {!</td><td>!} [+ str_change_d66 +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#007A35'> </div> !}CDA: {!</td><td>!} [+ cda_r +]% {!</td><td>!} [+ str_change_cda +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#FF6600'> </div> !}VVD: {!</td><td>!} [+ vvd_r +]% {!</td><td>!} [+ str_change_vvd +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#8b0000'> </div> !}SP: {!</td><td>!} [+ sp_r +]% {!</td><td>!} [+ str_change_sp +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#ee0000'> </div> !}PvdA: {!</td><td>!} [+ pvda_r +]% {!</td><td>!} [+ str_change_pvda +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#00cd67'> </div> !} [+ d66_name +]: {!</td><td>!} [+ d66_r +]% {!</td><td>!} [+ str_change_d66 +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#008b00'> </div> !}CDA: {!</td><td>!} [+ cda_r +]% {!</td><td>!} [+ str_change_cda +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#3a5fcd'> </div> !}VVD: {!</td><td>!} [+ vvd_r +]% {!</td><td>!} [+ str_change_vvd +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !}Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#002654'> </div> !}PVV: {!</td><td>!} [+ pvv_r +]% {!</td><td>!} [+ str_change_pvv +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#954B00'> </div> !}FvD: {!</td><td>!} [+ fvd_r +]% {!</td><td>!} [+ str_change_fvd +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#00008b'> </div> !}PVV: {!</td><td>!} [+ pvv_r +]% {!</td><td>!} [+ str_change_pvv +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#a71c20'> </div> !}FvD: {!</td><td>!} [+ fvd_r +]% {!</td><td>!} [+ str_change_fvd +] {!</td></tr>!}
 {!</table>!}
 
 **Potential coalitions:**
