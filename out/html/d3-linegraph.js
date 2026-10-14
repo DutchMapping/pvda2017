@@ -19,7 +19,7 @@ d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataM
         parties = ['pvda', 'sp', 'd66', 'cda', 'vvd', 'pvv', 'fvd', 'other'];
     }
     if (!partyColors) {
-        partyColors = {'pvda': '#E3000F', 'sp': '#8B0000', 'd66': '#DCCA4A', 'cda': '#000', 'vvd': '#D5AC27', 'pvv': '#3f7bc1', 'fvd': '#954B00', 'other': '#a0a0a0'};
+        partyColors = {'pvda': '#ee0000', 'sp': '#8b0000', 'd66': '#00cd67', 'cda': '#008b00', 'vvd': '#3a5fcd', 'pvv': '#00008b', 'fvd': '#a71c20', 'other': '#a0a0a0'};
     }
     if (!partyNames) {
         partyNames = {'pvda': 'PvdA', 'sp': 'SP', 'd66': 'D66', 'cda': 'CDA', 'vvd': 'DVP', 'pvv': 'PVV', 'fvd': 'FvD', 'other': 'Others'};
