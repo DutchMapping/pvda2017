@@ -54,6 +54,12 @@ Reichstag composition:
 # 1928: 3, 1930: 18
 {!<span class="tooltip-text" title="Forum for Democracy">FvD</span>!}: [+ fvd_r +]%
 # 1928: 9, 1930: 10
+{!<span class="tooltip-text" title="Green Left">GL</span>!}: [+ gl_r +]%
+{!<span class="tooltip-text" title="Christian Union">CU</span>!}: [+ cu_r +]%
+{!<span class="tooltip-text" title="Party for the Animals">PvdD</span>!}: [+ pvdd_r +]%
+{!<span class="tooltip-text" title="Reformed Political Party">SGP</span>!}: [+ sgp_r +]%
+{!<span class="tooltip-text" title="50PLUS">50PLUS</span>!}: [+ plus_r +]%
+{!<span class="tooltip-text" title="Denk">Denk</span>!}: [+ denk_r +]%
 Others: [+ other_r +]%
 
 [? if pvda_in_government = 1 : Budget: [+ budget +] ?]
@@ -86,6 +92,19 @@ Economic growth: [+ economic_growth_2 +]%
 {!<span class="tooltip-text" title="Party For Freedom">PVV</span>!}: [+ pvv_relation : relationships +]
 
 {!<span class="tooltip-text" title="Forum for Democracy">FvD</span>!}: [+ fvd_relation : relationships +]
+
+{!<span class="tooltip-text" title="Green Left">GL</span>!}: [+ gl_relation : relationships +]
+
+{!<span class="tooltip-text" title="Christian Union">CU</span>!}: [+ cu_relation : relationships +]
+
+{!<span class="tooltip-text" title="Party for the Animals">PvdD</span>!}: [+ pvdd_relation : relationships +]
+
+{!<span class="tooltip-text" title="Reformed Political Party">SGP</span>!}: [+ sgp_relation : relationships +]
+
+50PLUS: [+ plus_relation : relationships +]
+
+DENK: [+ denk_relation : relationships +]
+
 
 = Internal Factions of the PvdA
 
@@ -129,20 +148,32 @@ PVV: [+ pvv_votes +]%
 
 FvD: [+ fvd_votes +]%
 
+GL: [+ gl_votes +]%
+
+CU: [+ cu_votes +]%
+
+PvdD: [+ pvdd_votes +]%
+
+SGP: [+ sgp_votes +]%
+
+50PLUS: [+ plus_votes +]%
+
+Denk: [+ denk_votes +]%
+
 Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Working Middle Group: PvdA: [+ workers_pvda_display +]%, CDA: [+ workers_cda_display +]%, SP: [+ workers_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ workers_d66_display +]%, VVD: [+ workers_vvd_display +]%; PVV: [+ workers_pvv_display +]%, FvD: [+ workers_fvd_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?][? if srpd_formed: SRPD: [+ workers_srpd_display +]% ?]
+Working Middle Group: PvdA: [+ workers_pvda_display +]%, CDA: [+ workers_cda_display +]%, SP: [+ workers_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ workers_d66_display +]%, VVD: [+ workers_vvd_display +]%; PVV: [+ workers_pvv_display +]%, FvD: [+ workers_fvd_display +]%, GL: [+ workers_gl_display +]%, CU: [+ workers_cu_display +]%, PvdD: [+ workers_pvdd_display +]%, SGP: [+ workers_sgp_display +]%, 50PLUS: [+ workers_plus_display +]%, Denk: [+ workers_denk_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?][? if srpd_formed: SRPD: [+ workers_srpd_display +]% ?]
 
-Young and/or Working Top: PvdA: [+ new_middle_pvda_display +]%, CDA: [+ new_middle_cda_display +]%, SP: [+ new_middle_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ new_middle_d66_display +]%, VVD: [+ new_middle_vvd_display +]%; PVV: [+ new_middle_pvv_display +]%, FvD: [+ new_middle_fvd_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ new_middle_srpd_display +]% ?]
+Young and/or Working Top: PvdA: [+ new_middle_pvda_display +]%, CDA: [+ new_middle_cda_display +]%, SP: [+ new_middle_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ new_middle_d66_display +]%, VVD: [+ new_middle_vvd_display +]%; PVV: [+ new_middle_pvv_display +]%, FvD: [+ new_middle_fvd_display +]%, GL: [+ new_middle_gl_display +]%, CU: [+ new_middle_cu_display +]%, PvdD: [+ new_middle_pvdd_display +]%, SGP: [+ new_middle_sgp_display +]%, 50PLUS: [+ new_middle_plus_display +]%, Denk: [+ new_middle_denk_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ new_middle_srpd_display +]% ?]
 
-Retired Top: PvdA: [+ old_middle_pvda_display +]%, CDA: [+ old_middle_cda_display +]%, SP: [+ old_middle_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ old_middle_d66_display +]%, VVD: [+ old_middle_vvd_display +]%; PVV: [+ old_middle_pvv_display +]%, FvD: [+ old_middle_fvd_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ old_middle_srpd_display +]% ?]
+Retired Top: PvdA: [+ old_middle_pvda_display +]%, CDA: [+ old_middle_cda_display +]%, SP: [+ old_middle_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ old_middle_d66_display +]%, VVD: [+ old_middle_vvd_display +]%; PVV: [+ old_middle_pvv_display +]%, FvD: [+ old_middle_fvd_display +]%, GL: [+ old_middle_gl_display +]%, CU: [+ old_middle_cu_display +]%, PvdD: [+ old_middle_pvdd_display +]%, SGP: [+ old_middle_sgp_display +]%, 50PLUS: [+ old_middle_plus_display +]%, Denk: [+ old_middle_denk_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ old_middle_srpd_display +]% ?]
 
-Uncertain Workers: PvdA: [+ rural_pvda_display +]%, CDA: [+ rural_cda_display +]%, SP: [+ rural_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ rural_d66_display +]%, VVD: [+ rural_vvd_display +]%; PVV: [+ rural_pvv_display +]%, FvD: [+ rural_fvd_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ rural_srpd_display +]% ?]
+Uncertain Workers: PvdA: [+ rural_pvda_display +]%, CDA: [+ rural_cda_display +]%, SP: [+ rural_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ rural_d66_display +]%, VVD: [+ rural_vvd_display +]%; PVV: [+ rural_pvv_display +]%, FvD: [+ rural_fvd_display +]%,  GL: [+ rural_gl_display +]%, CU: [+ rural_cu_display +]%, PvdD: [+ rural_pvdd_display +]%, SGP: [+ rural_sgp_display +]%, 50PLUS: [+ rural_plus_display +]%, Denk: [+ rural_denk_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ rural_srpd_display +]% ?]
 
-The Disadvantaged: PvdA: [+ unemployed_pvda_display +]%, CDA: [+ unemployed_cda_display +]%, SP: [+ unemployed_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ unemployed_d66_display +]%, VVD: [+ unemployed_vvd_display +]%; PVV: [+ unemployed_pvv_display +]%, FvD: [+ unemployed_fvd_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ unemployed_srpd_display +]% ?]
+The Disadvantaged: PvdA: [+ unemployed_pvda_display +]%, CDA: [+ unemployed_cda_display +]%, SP: [+ unemployed_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ unemployed_d66_display +]%, VVD: [+ unemployed_vvd_display +]%; PVV: [+ unemployed_pvv_display +]%, FvD: [+ unemployed_fvd_display +]%, GL: [+ unemployed_gl_display +]%, CU: [+ unemployed_cu_display +]%, PvdD: [+ unemployed_pvdd_display +]%, SGP: [+ unemployed_sgp_display +]%, 50PLUS: [+ unemployed_plus_display +]%, Denk: [+ unemployed_denk_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ unemployed_srpd_display +]% ?]
 
-Poorer Retirees: PvdA: [+ catholics_pvda_display +]%, CDA: [+ catholics_cda_display +]%, SP: [+ catholics_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ catholics_d66_display +]%, VVD: [+ catholics_vvd_display +]%; PVV: [+ catholics_pvv_display +]%, FvD: [+ catholics_fvd_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ catholics_srpd_display +]% ?]
+Poorer Retirees: PvdA: [+ catholics_pvda_display +]%, CDA: [+ catholics_cda_display +]%, SP: [+ catholics_sp_display +]%, [? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]: [+ catholics_d66_display +]%, VVD: [+ catholics_vvd_display +]%; PVV: [+ catholics_pvv_display +]%, FvD: [+ catholics_fvd_display +]%, GL: [+ catholics_gl_display +]%, CU: [+ catholics_cu_display +]%, PvdD: [+ catholics_pvdd_display +]%, SGP: [+ catholics_sgp_display +]%, 50PLUS: [+ catholics_plus_display +]%, Denk: [+ catholics_denk_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?] [? if srpd_formed: SRPD: [+ catholics_srpd_display +]% ?]
 
 Support for the Republic: [+ pro_republic_disp +]%
