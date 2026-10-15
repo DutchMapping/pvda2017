@@ -115,12 +115,18 @@ Q.moderate_plan_adopted = 0;
 
 // inter-party relations
 Q.cda_relation = 50;
-Q.sp_relation = 35;
+Q.sp_relation = 45;
 Q.d66_relation = 70;
 Q.vvd_relation = 35;
 // PVV and FvD are invariably hostile
 Q.PVV_relation = 0;
 Q.FvD_relation = 0;
+Q.gl_relation = 85
+Q.cu_relation = 50
+Q.pvdd_relation = 40
+Q.sgp_relation = 20
+Q.plus_relation = 40
+Q.denk_relation = 60
 
 Q.sp_leader = "Roemer";
 // alternative is the Conciliators as party leader
@@ -129,6 +135,7 @@ Q.cda_leader = "van Haersma Buma";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 2017 December conference. Joos will be most friendly to the PvdA.
 Q.cda_party_leader = "van Haersma Buma";
 Q.fvd_leader = "Baudet";
+Q.vvd_leader = "Rutte";
 
 // hmm... maybe we can play nice with Hindenburg???
 Q.hindenburg_relation = 25;
@@ -241,7 +248,7 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['pvda', 'sp', 'cda', 'd66', 'vvd', 'pvv', 'fvd', 'other'];
+Q.parties = ['pvda', 'sp', 'cda', 'd66', 'vvd', 'pvv', 'fvd', 'gl, 'cu', 'pvdd', 'sgp', 'plus', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
@@ -255,7 +262,13 @@ Q.workers_d66 = 8;
 Q.workers_vvd = 7;
 Q.workers_pvv = 12;
 Q.workers_fvd = 1;
-Q.workers_other = 18;
+Q.workers_gl = 6;
+Q.workers_cu = 3;
+Q.workers_pvdd = 2;
+Q.workers_sgp = 2;
+Q.workers_plus = 6;
+Q.workers_denk = 0
+Q.workers_other = 0;
 
 Q.old_middle_pvda = 5;
 Q.old_middle_sp = 2;
@@ -264,7 +277,13 @@ Q.old_middle_d66= 11;
 Q.old_middle_vvd = 11;
 Q.old_middle_pvv = 5;
 Q.old_middle_fvd = 1;
-Q.old_middle_other = 46;
+Q.old_middle_gl = 9;
+Q.old_middle_cu = 3;
+Q.old_middle_pvdd = 2;
+Q.old_middle_sgp = 0;
+Q.old_middle_plus = 33;
+Q.old_middle_denk = 0;
+Q.old_middle_other = 0;
 
 Q.new_middle_pvda = 4; 
 Q.new_middle_sp = 3; //sp
@@ -273,7 +292,13 @@ Q.new_middle_d66= 19; //d66
 Q.new_middle_vvd = 10; //vvd
 Q.new_middle_pvv = 2; //pvv
 Q.new_middle_fvd = 0; //fvd
-Q.new_middle_other = 17;
+Q.new_middle_gl = 13;
+Q.new_middle_cu = 3;
+Q.new_middle_pvdd = 4;
+Q.new_middle_sgp = 1;
+Q.new_middle_plus = 0;
+Q.new_middle_denk = 0;
+Q.new_middle_other = 0;
 
 Q.rural_pvda = 4;
 Q.rural_sp = 8;
@@ -282,7 +307,13 @@ Q.rural_d66= 3;
 Q.rural_vvd = 2;
 Q.rural_pvv = 21;
 Q.rural_fvd = 1;
-Q.rural_other = 28;
+Q.rural_gl = 6;
+Q.rural_cu = 0;
+Q.rural_pvdd = 5;
+Q.rural_sgp = 0;
+Q.rural_plus = 17;
+Q.rural_denk = 0;
+Q.rural_other = 0;
 
 Q.unemployed_pvda = 7;
 Q.unemployed_sp = 2;
@@ -291,7 +322,13 @@ Q.unemployed_d66 = 0;
 Q.unemployed_vvd = 0;
 Q.unemployed_pvv = 16;
 Q.unemployed_fvd = 0;
-Q.unemployed_other = 38;
+Q.unemployed_gl = 3;
+Q.unemployed_cu = 0;
+Q.unemployed_pvdd = 3;
+Q.unemployed_sgp = 0;
+Q.unemployed_plus = 22;
+Q.unemployed_denk = 10;
+Q.unemployed_other = 0;
 
 Q.catholics_pvda = 6;
 Q.catholics_sp = 4;
@@ -300,7 +337,13 @@ Q.catholics_d66 = 3;
 Q.catholics_vvd = 4;
 Q.catholics_pvv = 12;
 Q.catholics_fvd = 1;
-Q.catholics_other = 65;
+Q.catholics_gl = 3;
+Q.catholics_cu = 3;
+Q.catholics_pvdd = 2;
+Q.catholics_sgp = 2;
+Q.catholics_plus = 55;
+Q.catholics_denk = 0;
+Q.catholics_other = 0;
 
 
 // Current Reichstag composition
@@ -309,24 +352,36 @@ Q.catholics_other = 65;
 // note: the Z figures also include the BVP (Bavarian people's party)
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
-Q.pvda_r = 26;
-Q.sp_r = 9;
-Q.cda_r = 17;
-Q.d66_r = 6;
-Q.vvd_r = 10;
-Q.pvv_r = 20;
-Q.fvd_r = 3;
-Q.other_r = 9;
+Q.pvda_r = 25.3;
+Q.sp_r = 10;
+Q.cda_r = 8.6;
+Q.d66_r = 8;
+Q.vvd_r = 27.3;
+Q.pvv_r = 10;
+Q.fvd_r = 0;
+Q.gl_r = 2.6
+Q.cu_r = 3.3;
+Q.pvdd_r = 1.3;
+Q.sgp_r = 2;
+Q.plus_r = 1.3;
+Q.denk_r = 0;
+Q.other_r = 0;
 
 // diff from prev
 Q.old_pvda_r = 24.8;
-Q.old_sp_r = 9.7;
+Q.old_sp_r = 9.6;
 Q.old_cda_r = 8.5;
 Q.old_d66_r = 8;
 Q.old_vvd_r = 26.6;
 Q.old_pvv_r = 10;
 Q.old_fvd_r = 0;
-Q.old_other_r = 12.4;
+Q.old_gl_r = 2.3;
+Q.old_cu_r = 3.3;
+Q.old_pvdd_r = 1.9;
+Q.old_sgp_r = 2.1;
+Q.old_plus_r = 1.9;
+Q.old_denk_r = 0;
+Q.old_other_r = 0;
 
 // sapd isn't formed yet, but it may be formed
 Q.sapd_r = 0;
@@ -348,11 +403,11 @@ Q.president = "Willem-Alexander";
 // starting chancellor: Mark Rutte
 Q.chancellor = "Rutte";
 Q.chancellor_party = 'VVD';
-Q.pvda_in_government = 0;
-Q.cda_in_government = 1;
+Q.pvda_in_government = 1;
+Q.cda_in_government = 0;
 Q.d66_in_government = 0;
 Q.vvd_in_government = 1;
-Q.pvv_in_government = 1;
+Q.pvv_in_government = 0;
 Q.sp_in_government = 0;
 Q.fvd_in_government = 0;
 
