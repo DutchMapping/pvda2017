@@ -100,6 +100,24 @@ data = [
         "seats": Math.round(Q.sp_r*1.5),
     },
     {
+        "id": "pvdd",
+        "legend": "PvdD",
+        "name": "PvdD",
+        "seats": Math.round(Q.fvd_r*1.5),
+    },
+    {
+        "id": "gl",
+        "legend": "GL",
+        "name": "GroenLinks",
+        "seats": Math.round(Q.fvd_r*1.5),
+    },
+    {
+        "id": "denk",
+        "legend": "Denk",
+        "name": "Denk",
+        "seats": Math.round(Q.fvd_r*1.5),
+    },
+    {
         "id": "pvda",
         "legend": "PvdA",
         "name": "PvdA",
@@ -112,10 +130,22 @@ data = [
         "seats": Math.round(Q.d66_r*1.5),
     },
     {
+        "id": "cu",
+        "legend": "CU",
+        "name": "CU",
+        "seats": Math.round(Q.fvd_r*1.5),
+    },
+    {
         "id": "cda",
         "legend": "CDA",
         "name": "CDA",
         "seats": Math.round(Q.cda_r*1.5),
+    },
+    {
+        "id": "plus",
+        "legend": "50PLUS",
+        "name": "50PLUS",
+        "seats": Math.round(Q.fvd_r*1.5),
     },
     {
         "id": "vvd",
@@ -123,11 +153,12 @@ data = [
         "name": "VVD",
         "seats": Math.round(Q.vvd_r*1.5),
     },
+
     {
-        "id": "other",
-        "legend": "Others",
-        "name": "Others",
-        "seats": Math.round(Q.other_r*1.5),
+        "id": "sgp",
+        "legend": "SGP",
+        "name": "SGP",
+        "seats": Math.round(Q.fvd_r*1.5),
     },
     {
         "id": "pvv",
@@ -140,6 +171,12 @@ data = [
         "legend": "FvD",
         "name": "FvD",
         "seats": Math.round(Q.fvd_r*1.5),
+    },
+    {
+        "id": "other",
+        "legend": "Others",
+        "name": "Others",
+        "seats": Math.round(Q.other_r*1.5),
     },
 ];
 
@@ -170,12 +207,18 @@ go-to: coalition_menu
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#8b0000'> </div> !}SP: {!</td><td>!} [+ sp_r +]% {!</td><td>!} [+ str_change_sp +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#ee0000'> </div> !}PvdA: {!</td><td>!} [+ pvda_r +]% {!</td><td>!} [+ str_change_pvda +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#006b2d'> </div> !}PvdD: {!</td><td>!} [+ pvdd_r +]% {!</td><td>!} [+ str_change_pvdd +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#84be02'> </div> !}GL: {!</td><td>!} [+ gl_r +]% {!</td><td>!} [+ str_change_gl +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#22eeff'> </div> !}Denk: {!</td><td>!} [+ denk_r +]% {!</td><td>!} [+ str_change_denk +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#00cd67'> </div> !} [+ d66_name +]: {!</td><td>!} [+ d66_r +]% {!</td><td>!} [+ str_change_d66 +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#00a7eb'> </div> !}CU: {!</td><td>!} [+ cu_r +]% {!</td><td>!} [+ str_change_cu +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#008b00'> </div> !}CDA: {!</td><td>!} [+ cda_r +]% {!</td><td>!} [+ str_change_cda +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#92278f'> </div> !}50PLUS: {!</td><td>!} [+ plus_r +]% {!</td><td>!} [+ str_change_plus +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#3a5fcd'> </div> !}VVD: {!</td><td>!} [+ vvd_r +]% {!</td><td>!} [+ str_change_vvd +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !}Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#ee7c10'> </div> !}SGP: {!</td><td>!} [+ sgp_r +]% {!</td><td>!} [+ str_change_sgp +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#00008b'> </div> !}PVV: {!</td><td>!} [+ pvv_r +]% {!</td><td>!} [+ str_change_pvv +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#a71c20'> </div> !}FvD: {!</td><td>!} [+ fvd_r +]% {!</td><td>!} [+ str_change_fvd +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !}Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td></tr>!}
 {!</table>!}
 
 **Potential coalitions:**
@@ -216,23 +259,11 @@ Finally, the PvdA can govern alone! Our long campaign of electioneering has paid
 Who should be the party leader / candidate for Prime Minister?
 
 - @asscher_pm: Lodewijk Asscher for Prime Minister.
-- @samsom_pm: Diederik Samsom for Prime Minister.
-- @ploumen_pm: Lilianne Ploumen for Prime Minister.
 
 @asscher_pm
 on-arrival: chancellor = "Asscher"; chancellor_party = "PvdA"
 
 Lodewijk Asscher has become Prime Minister of the PvdA majority.
-
-@samsom_pm
-on-arrival: chancellor = "Samsom"; chancellor_party = "PvdA"
-
-Diederik Samsom has become Prime Minister of the PvdA majority.
-
-@ploumen_pm
-on-arrival: chancellor = "Ploumen"; chancellor_party = "PvdA"
-
-Lilianne Ploumen has become Prime Minister of the PvdA majority.
 
 
 @progressive_coalition
