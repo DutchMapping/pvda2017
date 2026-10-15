@@ -31,14 +31,14 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 = Government
 
-President: [+ president +]
+Monarch: [+ president +]
 
-Chancellor: [+ chancellor +] ([+ chancellor_party +])
+Prime Minister: [+ chancellor +] ([+ chancellor_party +])
 
 Reichstag composition:
 
 # 1928: 30, 1930: 25, 1932: 22
-{!<span class="tooltip-text" title="Social Democratic Party of Germany">PvdA</span>!}: [+ pvda_r +]%
+{!<span class="tooltip-text" title="Party of Labour">PvdA</span>!}: [+ pvda_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 [? if srpd_formed and srpd_r > 0: SRPD: [+ srpd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
@@ -46,7 +46,7 @@ Reichstag composition:
 # 1928: 10, 1930: 13
 {!<span class="tooltip-text" title="Socialist Party">SP</span>!}: [+ sp_r +]%
 # 1928: 5, 1930: 4 (as DstP)
-{!<span class="tooltip-text" title="Democraten 66">!}[? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]{!</span>!}: [+ d66_r +]%
+{!<span class="tooltip-text" title="Democrats 66">!}[? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]{!</span>!}: [+ d66_r +]%
 # 1928: 9, 1930: 5
 {!<span class="tooltip-text" title="People's party for Freedom and Democracy">VVD</span>!}: [+ vvd_r +]%
 # 1928: 14, 1930: 7
@@ -77,7 +77,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Christian Democratic Appeal">CDA</span>!}: [+ cda_relation : relationships +]
 
-{!<span class="tooltip-text" title="Democraten 66">!}[? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]{!</span>!}: [+ d66_relation : relationships +]
+{!<span class="tooltip-text" title="Democrats 66">!}[? if not d66_name: D66?][? if d66_name != 0 : [+ d66_name +]?]{!</span>!}: [+ d66_relation : relationships +]
 
 {!<span class="tooltip-text" title="People's party for Freedom and Democracy">VVD</span>!}: [+ vvd_relation : relationships +]
 
