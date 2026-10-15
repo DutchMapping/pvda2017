@@ -121,12 +121,12 @@ Q.vvd_relation = 35;
 // PVV and FvD are invariably hostile
 Q.PVV_relation = 0;
 Q.FvD_relation = 0;
-Q.gl_relation = 85
-Q.cu_relation = 50
-Q.pvdd_relation = 40
-Q.sgp_relation = 20
-Q.plus_relation = 40
-Q.denk_relation = 60
+Q.gl_relation = 85;
+Q.cu_relation = 50;
+Q.pvdd_relation = 40;
+Q.sgp_relation = 20;
+Q.plus_relation = 40;
+Q.denk_relation = 60;
 
 Q.sp_leader = "Roemer";
 // alternative is the Conciliators as party leader
@@ -248,7 +248,7 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['pvda', 'sp', 'cda', 'd66', 'vvd', 'pvv', 'fvd', 'gl, 'cu', 'pvdd', 'sgp', 'plus', 'other'];
+Q.parties = ['pvda', 'sp', 'cda', 'd66', 'vvd', 'pvv', 'fvd', 'gl', 'cu', 'pvdd', 'sgp', 'plus', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
@@ -267,7 +267,7 @@ Q.workers_cu = 3;
 Q.workers_pvdd = 2;
 Q.workers_sgp = 2;
 Q.workers_plus = 6;
-Q.workers_denk = 0
+Q.workers_denk = 0;
 Q.workers_other = 0;
 
 Q.old_middle_pvda = 5;
@@ -359,7 +359,7 @@ Q.d66_r = 8;
 Q.vvd_r = 27.3;
 Q.pvv_r = 10;
 Q.fvd_r = 0;
-Q.gl_r = 2.6
+Q.gl_r = 2.6;
 Q.cu_r = 3.3;
 Q.pvdd_r = 1.3;
 Q.sgp_r = 2;
@@ -645,7 +645,7 @@ Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
 Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
 Q.radbruch_advisor = 0; // Gustav Radbruch
 Q.stampfer_advisor = 0; // Friedrich Stampfer
-
+!}
 set-bg: img/map_2.jpg
 new-page: true
 
@@ -674,4 +674,3 @@ After the crash in 2008, it finally seems the Dutch economy is on the road to re
 As for the PvdA, we are in big trouble. Entering a coalition with the neoliberal VVD has cost us dearly. The polls put us at 10-12 seats, which would be the worst result in the history of the party by far. With a new party leader, Lodewijk Asscher, we hope to be able to regain at least some of the 38 seats we won in 2012 in the polls.
 
 
-!}
