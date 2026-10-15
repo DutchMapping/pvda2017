@@ -6,7 +6,7 @@ go-to: post_event if started = 1; start_menu if started = 0
 new-page: true
 go-to: start_menu_2
 
-= Social Democracy: An Alternate History
+= Sociaaldemocratie: An alternate present
 
 @start_menu_2
 
@@ -37,7 +37,7 @@ Q.use_decimals = 0;
 Q.annual_income = 0;
 Q.saves_disabled = 0;
 Q.discard_disabled = 0;
-Q.hand_size = 3;
+Q.hand_size = 4;
 Q.starting_dissent = 1; // default dissent = normal
 Q.starting_relations = 1;
 
