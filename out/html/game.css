@@ -30,6 +30,11 @@ body {
   --tab-hover-color: #242424;
   --card-border-color: #4c4c4c;
   --card-bg-color: #3f3f3f;
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  background-color: var(--bg-color);
+  padding: 0;
+  line-height: 155%;
+  overflow-y: scroll;
 }
 body #content {
   border-style: double;
@@ -590,6 +595,24 @@ table {
 /* Giving them NDP colors, idk */
 .seat.srpd {
     fill: #F4A460;
+}
+.seat.gl {
+    fill: #84be02;
+}
+.seat.cu {
+    fill: #00a7eb;
+}
+.seat.pvdd {
+    fill: #006b2d;
+}
+.seat.sgp {
+    fill: #ee7c10;
+}
+.seat.plus {
+    fill: #92278f;
+}
+.seat.denk {
+    fill: #22eeff;
 }
 
 .tooltip-text {
