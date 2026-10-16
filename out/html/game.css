@@ -1,4 +1,4 @@
-body.dark-mode {
+body {
   --bg-color: #f3f3e3;
   --border-color: #000;
   --content-bg-color: #f3f3f3;
@@ -18,7 +18,7 @@ body.dark-mode {
   line-height: 155%;
   overflow-y: scroll;
 }
-body {
+body.dark-mode {
   --bg-color: #000;
   --border-color: #fff;
   --content-bg-color: #242424;
@@ -30,18 +30,13 @@ body {
   --tab-hover-color: #242424;
   --card-border-color: #4c4c4c;
   --card-bg-color: #3f3f3f;
-  font-family: "Trebuchet MS", Tahoma, sans-serif;
-  background-color: var(--bg-color);
-  padding: 0;
-  line-height: 155%;
-  overflow-y: scroll;
 }
-body #content {
+body.dark-mode #content {
   border-style: double;
   border-width: 4px;
   border-color: #888;
 }
-body .tools {
+body.dark-mode.tools {
   border-style: double;
   border-width: 4px;
   border-color: #888;
