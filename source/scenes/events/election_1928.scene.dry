@@ -103,19 +103,19 @@ data = [
         "id": "pvdd",
         "legend": "PvdD",
         "name": "PvdD",
-        "seats": Math.round(Q.fvd_r*1.5),
+        "seats": Math.round(Q.pvdd_r*1.5),
     },
     {
         "id": "gl",
         "legend": "GL",
         "name": "GroenLinks",
-        "seats": Math.round(Q.fvd_r*1.5),
+        "seats": Math.round(Q.gl_r*1.5),
     },
     {
         "id": "denk",
         "legend": "Denk",
         "name": "Denk",
-        "seats": Math.round(Q.fvd_r*1.5),
+        "seats": Math.round(Q.denk_r*1.5),
     },
     {
         "id": "pvda",
@@ -133,7 +133,7 @@ data = [
         "id": "cu",
         "legend": "CU",
         "name": "CU",
-        "seats": Math.round(Q.fvd_r*1.5),
+        "seats": Math.round(Q.cu_r*1.5),
     },
     {
         "id": "cda",
@@ -145,7 +145,7 @@ data = [
         "id": "plus",
         "legend": "50PLUS",
         "name": "50PLUS",
-        "seats": Math.round(Q.fvd_r*1.5),
+        "seats": Math.round(Q.plus_r*1.5),
     },
     {
         "id": "vvd",
@@ -158,7 +158,7 @@ data = [
         "id": "sgp",
         "legend": "SGP",
         "name": "SGP",
-        "seats": Math.round(Q.fvd_r*1.5),
+        "seats": Math.round(Q.sgp_r*1.5),
     },
     {
         "id": "pvv",
